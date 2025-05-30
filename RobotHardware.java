@@ -104,8 +104,8 @@ public class RobotHardware {
         // Define and initialize ALL installed servos.
         armExtender = myOpMode.hardwareMap.get(Servo.class, "arm_extender");
         claw = myOpMode.hardwareMap.get(CRServo.class, "claw");
-        armExtender.setPosition(MID_SERVO);
-        claw.setPower(0);
+        claw.setPosition(MID_SERVO);
+        armExtender.setPower(0);
 
         myOpMode.telemetry.addData(">", "Hardware Initialized");
         myOpMode.telemetry.update();
